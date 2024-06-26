@@ -1,16 +1,22 @@
-import type { Site, Page, Links, Socials } from "@types"
+import type { Site, Page, Links, Socials, Contact } from "@types"
 
 // Global
 export const SITE: Site = {
-  TITLE: "Astro Sphere",
-  DESCRIPTION: "Welcome to Astro Sphere, a portfolio and blog for designers and developers.",
-  AUTHOR: "Mark Horn",
+  TITLE: "Jarema",
+  DESCRIPTION: "Hi there, I'm Jarema.",
+  AUTHOR: "Jarema",
 }
 
-// Work Page
+// Work
 export const WORK: Page = {
   TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
+  DESCRIPTION: "A partial list of places I have worked at.",
+}
+
+// Contact
+export const CONTACT: Page = {
+  TITLE: "Contact",
+  DESCRIPTION: "How to reach me.",
 }
 
 // Blog Page
@@ -42,6 +48,10 @@ export const LINKS: Links = [
     HREF: "/work", 
   },
   { 
+    TEXT: "Contact", 
+    HREF: "/contact", 
+  },
+  { 
     TEXT: "Blog", 
     HREF: "/blog", 
   },
@@ -56,26 +66,20 @@ export const SOCIALS: Socials = [
   { 
     NAME: "Email",
     ICON: "email", 
-    TEXT: "markhorn.dev@gmail.com",
-    HREF: "mailto:markhorn.dev@gmail.com",
+    TEXT: "hi@jar.tf",
+    HREF: "mailto:hi@jar.tf",
   },
   { 
     NAME: "Github",
     ICON: "github",
-    TEXT: "markhorn-dev",
-    HREF: "https://github.com/markhorn-dev/astro-sphere"
-  },
-  { 
-    NAME: "LinkedIn",
-    ICON: "linkedin",
-    TEXT: "markhorn-dev",
-    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+    TEXT: "jartf",
+    HREF: "https://github.com/jartf"
   },
   { 
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
+    TEXT: "jartf_",
+    HREF: "https://twitter.com/jartf_",
   },
 ]
 

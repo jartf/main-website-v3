@@ -3,6 +3,15 @@ export type Page = {
   DESCRIPTION: string
 }
 
+export type Contact = {
+  TITLE: string
+  DESCRIPTION: string
+  NAME: string
+  ICON: string
+  TEXT: string
+  HREF: string
+}
+
 export interface Site extends Page {
   AUTHOR: string
 }
