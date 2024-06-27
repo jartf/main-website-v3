@@ -1,11 +1,11 @@
 ---
-import PageLayout from "@layouts/PageLayout.astro"
+import HomepageLayout from "@layouts/HomepageLayout.astro"
 import { SITE } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 ---
 
-<PageLayout title="Home" description={SITE.DESCRIPTION}>
+<HomepageLayout title="Home" description={SITE.DESCRIPTION}>
 
   <!-- Light Mode: Particles -->
   <div class='absolute inset-0 block dark:hidden'>
