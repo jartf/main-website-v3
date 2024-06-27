@@ -1,6 +1,5 @@
 ---
-import { getCollection } from "astro:content"
-import PageLayout from "@layouts/PageLayout.astro"
+import ContactLayout from "@layouts/ContactLayout.astro"
 import ContactCard from "@components/ContactCard.astro"
 import { SITE, CONTACT } from "@consts"
 import TopLayout from "@layouts/TopLayout.astro"
@@ -49,7 +48,7 @@ const contact = [
 ]
 ---
 
-<PageLayout title="Contact" description={SITE.DESCRIPTION}>
+<ContactLayout title="Contact" description={SITE.DESCRIPTION}>
   <TopLayout>
     <div class="animate page-heading">
       {CONTACT.TITLE}
