@@ -1,5 +1,4 @@
 ---
-import SpeedInsights from '@vercel/speed-insights/astro';
 
 interface Props {
   title: string
@@ -66,12 +65,3 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props
     ].forEach((link) => link.remove())
   )
 </script>
-
-<!-- <Vercel SpeedInsights  /> -->
-<script is:inline>
-  function speedInsightsBeforeSend(data){
-    console.log("Speed Insights before send", data)
-    return data;
-  }
-</script>
-<SpeedInsights />
