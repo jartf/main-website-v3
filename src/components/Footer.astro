@@ -1,6 +1,35 @@
 ---
 import { SITE, SOCIALS } from "@consts"
+import StackCard from "@components/StackCard.astro"
 import Container from "@components/Container.astro"
+
+const stack = [
+  { 
+    text: "Astro", 
+    icon: "astro", 
+    href: "https://astro.build" 
+  },
+  { 
+    text: "Javascript", 
+    icon: "javascript", 
+    href: "https://www.javascript.com" 
+  },
+  { 
+    text: "Typescript", 
+    icon: "typescript", 
+    href: "https://www.typescriptlang.org" 
+  },
+  { 
+    text: "Tailwind", 
+    icon: "tailwind", 
+    href: "https://tailwindcss.com" 
+  },
+  { 
+    text: "SolidJS", 
+    icon: "solidjs", 
+    href: "https://www.solidjs.com/" 
+  },
+]
 ---
 
 <footer class="relative bg-white dark:bg-black">
@@ -32,13 +61,22 @@ import Container from "@components/Container.astro"
               {SITE.TITLE}
             </a>
           </div>
-          <div class="flex gap-2 justify-center sm:justify-end items-center">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-            </span>
-            All systems normal
-          </div>
+          <section class="animate">
+            <div class="space-y-4">
+              <p class="font-semibold text-black dark:text-white flex justify-center sm:justify-end">
+                Website built with
+              </p>
+              <div class="flex flex-wrap items-end gap-2 mt-5 justify-center sm:justify-end">
+                {stack.map(item => (
+                  <StackCard 
+                    text={item.text}
+                    icon={item.icon}
+                    href={item.href}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
         </div>
       </Container>
     </section>
