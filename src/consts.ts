@@ -9,7 +9,13 @@ export const SITE: Site = {
 
 // Work
 export const WORK: Page = {
-  TITLE: "Work",
+  TITLE: "WORK",
+  DESCRIPTION: "A partial list of my works.",
+}
+
+// Jobs
+export const JOBS: Page = {
+  TITLE: "Jobs",
   DESCRIPTION: "A partial list of places I have worked at.",
 }
 
