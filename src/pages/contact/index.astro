@@ -11,7 +11,7 @@ const contact = [
     href: "mailto:hi@jar.tf" 
   },
   { 
-    text: "Pronouns.page", 
+    text: "Pronouns.‏‏‎‎page", 
     icon: "pronounspage", 
     href: "https://en.pronouns.page/@jerryv" 
   },
@@ -71,7 +71,7 @@ const contact = [
           <p class="font-semibold text-black dark:text-white">
             Contact methods
           </p>
-          <div class="flex flex-wrap items-center gap-2 mt-5">
+          <div class="w-full grid mx-auto md:grid-cols-3 sm:grid-cols-2 gap-2 mt-5">
             {contact.map(item => (
               <ContactCard 
                 text={item.text}
