@@ -9,7 +9,7 @@ const { text, icon, href } = Astro.props
 ---
 
 <a href={href} target="_blank" class="px-3 py-4 flex group rounded border gap-2 md:aspect-square items-center md:content-start border-neutral-200 justify-center md:justify-start dark:border-neutral-700 hover:bg-neutral-100 hover:dark:bg-neutral-800 blend">
-  <object align=center>
+  <object>
     <svg class="flex-initial md:w-8 md:h-8 w-5 h-5">
       <use href={`/contact.svg#${icon}`}></use>
       Sorry, your browser does not support inline SVG.
