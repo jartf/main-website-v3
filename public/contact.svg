@@ -85,7 +85,7 @@
 
     <!-- reddit icon -->
     <symbol id="reddit" viewBox="0 0 256 256">
-      <style">
+      <style>
         .cls-1 {fill: #fff;}
         .cls-1, .cls-2 {stroke-width: 0px;}
         .cls-2 {fill: #ff4500;}
